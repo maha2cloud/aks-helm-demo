@@ -49,6 +49,6 @@ jobs:
 
     - name: Deploy with Helm
       run: |
-        helm upgrade --install htmlapp ./helm/htmlapp \
+        helm upgrade --install htmlapp . \
           --set image.repository=maha2cloudout/myhtml \
           --set image.tag=${{ github.sha }}
