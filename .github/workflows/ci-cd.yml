@@ -41,8 +41,8 @@ jobs:
     - name: Set AKS Context
       uses: azure/aks-set-context@v4
       with:
-        resource-group: my-rg
-        cluster-name: my-aks
+        resource-group: poda
+        cluster-name: masterpo
 
     - name: Install Helm
       uses: azure/setup-helm@v4
